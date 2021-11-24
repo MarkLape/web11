@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Regester</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm label {
+padding: 0;
+font-weight: bold;
+text-align: right;
+display: block;
+}
+
+.myForm input,
+.myForm select,
+.myForm textarea {
+margin-left: 2em;
+float: right;
+width: 20em;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 14em;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<h1>PROFILLING</h1>
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label>Name 
+<input type="text" required>
+</label> 
+</p>
+
+<p>
+    <label>Middle Name 
+    <input type="text" required>
+    </label> 
+</p>
+
+<p>
+    <label> Last Name 
+    <input type="text" required>
+    </label> 
+    </p>
+    <p>
+        <label>Email 
+        <input type="email" name="email_address">
+        </label>
+        </p>
+        <p>
+            <label> Home Address
+            <input type="text" required>
+            </label> 
+         </p>
+         <label> Sexuality
+            <select name="color">
+            <option value="" selected="selected">Select One</option>
+            <option value="" >Male</option>
+            <option value="" >Female</option>
+            </select>
+            </label> 
+
+<label> Favorite Color
+<select id="pickup_place" name="color">
+<option value="" selected="selected">Select One</option>
+<option value="" >red</option>
+<option value="" >blue</option>
+<option value="" >green</option>
+<option value="" >orange</option>
+<option value="" >pink</option>
+<option value="" >black</option>
+<option value="" >grey</option>
+<option value="" >purple</option>
+<option value="" >brown</option>
+</select>
+</label> 
+</p>
+
+<p>
+<label>Tell about yourself 
+<textarea name="comments" maxlength="1000"></textarea>
+</label>
+</p>
+<p><input type="reset"></p>
+<p><button>Submit</button>
+</p>
+
+
+</body>
+</html>
